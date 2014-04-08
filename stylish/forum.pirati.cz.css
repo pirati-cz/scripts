@@ -1,0 +1,189 @@
+/*
+ *
+ * Applies to: forum.pirati.cz
+ *
+ * URLs on the domain: forum.pirati.cz
+ *
+ */
+
+/* podpalubi */
+div.forumbg div.inner ul.topiclist li.row dl.icon dt a[href*='-f375'][class='topictitle'] {
+    color:#666;
+    background-color:#ccc;
+    padding:1px;
+}
+
+/* CF */
+div.forumbg div.inner ul.topiclist li.row dl.icon dt a[href*='-f477'][class='topictitle'],
+div.forumbg div.inner ul.topiclist li.row dl.icon dt a[href*='-f487'][class='topictitle'] {
+    color:#fff;
+    background-color:#33f;
+    padding:1px;
+}
+
+/* MO */
+div.forumbg div.inner ul.topiclist li.row dl.icon dt a[href*='-f181'][class='topictitle'],
+div.forumbg div.inner ul.topiclist li.row dl.icon dt a[href*='-f563'][class='topictitle'],
+div.forumbg div.inner ul.topiclist li.row dl.icon dt a[href*='-f259'][class='topictitle'],
+div.forumbg div.inner ul.topiclist li.row dl.icon dt a[href*='-f229'][class='topictitle'] {
+    color:#fff;
+    background-color:#009091;
+    padding:1px;
+}
+
+/* ZO */
+div.forumbg div.inner ul.topiclist li.row dl.icon dt a[href*='-f185'][class='topictitle'],
+div.forumbg div.inner ul.topiclist li.row dl.icon dt a[href*='-f630'][class='topictitle']{
+    color:#fff;
+    background-color:#8366AE;
+    padding:1px;
+}
+
+/* AO */
+div.forumbg div.inner ul.topiclist li.row dl.icon dt a[href*='-f182'][class='topictitle'],
+div.forumbg div.inner ul.topiclist li.row dl.icon dt a[href*='-f227'][class='topictitle'] {
+    color:#fff;
+    background-color:#84B435;
+    padding:1px;
+}
+
+/* predpisy */
+div.forumbg div.inner ul.topiclist li.row dl.icon dt a[href*='-f566'][class='topictitle'] {
+    color:#fff;
+    background-color:#ff1493;
+    padding:1px;
+}
+
+/* RP */
+div.forumbg div.inner ul.topiclist li.row dl.icon dt a[href*='-f352'][class='topictitle'],
+div.forumbg div.inner ul.topiclist li.row dl.icon dt a[href*='-f525'][class='topictitle'] {
+    color:#fff;
+    background-color:#000;
+    padding:1px;
+}
+
+/* RV */
+div.forumbg div.inner ul.topiclist li.row dl.icon dt a[href*='-f433'][class='topictitle'],
+div.forumbg div.inner ul.topiclist li.row dl.icon dt a[href*='-f248'][class='topictitle']{
+    color:magenta;
+    background-color:#ddd;
+}
+
+/* KK */
+div.forumbg div.inner ul.topiclist li.row dl.icon dt a[href*='-f473'][class='topictitle'] {
+    color:#fff;
+    /* background-color:#D31141; */
+    /* dulezite */
+    background-color:#f00;
+    padding:1px;
+}
+
+/* TO */
+div.forumbg div.inner ul.topiclist li.row dl.icon dt a[href*='-f228'][class='topictitle'] {
+    color:#fff;
+    background-color:#151B54;
+    padding:1px;
+}
+
+/* vnitrostranicka diskuse */
+div.forumbg div.inner ul.topiclist li.row dl.icon dt a[href*='-f75'][class='topictitle'] {
+    color:#000;
+    background-color:#fff;
+    padding:1px;
+}
+
+/* kraje */
+div.forumbg div.inner ul.topiclist li.row dl.icon dt a[href*='-f78'][class='topictitle'],
+div.forumbg div.inner ul.topiclist li.row dl.icon dt a[href*='-f408'][class='topictitle'],
+div.forumbg div.inner ul.topiclist li.row dl.icon dt a[href*='-f309'][class='topictitle'],
+div.forumbg div.inner ul.topiclist li.row dl.icon dt a[href*='-f407'][class='topictitle'],
+div.forumbg div.inner ul.topiclist li.row dl.icon dt a[href*='-f434'][class='topictitle'],
+div.forumbg div.inner ul.topiclist li.row dl.icon dt a[href*='-f617'][class='topictitle'],
+div.forumbg div.inner ul.topiclist li.row dl.icon dt a[href*='-f634'][class='topictitle'],
+div.forumbg div.inner ul.topiclist li.row dl.icon dt a[href*='-f411'][class='topictitle'],
+div.forumbg div.inner ul.topiclist li.row dl.icon dt a[href*='-f86'][class='topictitle'],
+div.forumbg div.inner ul.topiclist li.row dl.icon dt a[href*='-f80'][class='topictitle'],
+div.forumbg div.inner ul.topiclist li.row dl.icon dt a[href*='-f615'][class='topictitle'],
+div.forumbg div.inner ul.topiclist li.row dl.icon dt a[href*='-f84'][class='topictitle'],
+div.forumbg div.inner ul.topiclist li.row dl.icon dt a[href*='-f339'][class='topictitle'],
+div.forumbg div.inner ul.topiclist li.row dl.icon dt a[href*='-f82'][class='topictitle'],
+div.forumbg div.inner ul.topiclist li.row dl.icon dt a[href*='-f90'][class='topictitle'],
+div.forumbg div.inner ul.topiclist li.row dl.icon dt a[href*='-f83'][class='topictitle'],
+div.forumbg div.inner ul.topiclist li.row dl.icon dt a[href*='-f208'][class='topictitle'],
+div.forumbg div.inner ul.topiclist li.row dl.icon dt a[href*='-f567'][class='topictitle'],
+div.forumbg div.inner ul.topiclist li.row dl.icon dt a[href*='-f436'][class='topictitle'],
+div.forumbg div.inner ul.topiclist li.row dl.icon dt a[href*='-f89'][class='topictitle'],
+div.forumbg div.inner ul.topiclist li.row dl.icon dt a[href*='-f81'][class='topictitle'],
+div.forumbg div.inner ul.topiclist li.row dl.icon dt a[href*='-f415'][class='topictitle'],
+div.forumbg div.inner ul.topiclist li.row dl.icon dt a[href*='-f565'][class='topictitle'],
+div.forumbg div.inner ul.topiclist li.row dl.icon dt a[href*='-f88'][class='topictitle'],
+div.forumbg div.inner ul.topiclist li.row dl.icon dt a[href*='-f416'][class='topictitle'],
+div.forumbg div.inner ul.topiclist li.row dl.icon dt a[href*='-f87'][class='topictitle'],
+div.forumbg div.inner ul.topiclist li.row dl.icon dt a[href*='-f412'][class='topictitle'],
+div.forumbg div.inner ul.topiclist li.row dl.icon dt a[href*='-f506'][class='topictitle'],
+div.forumbg div.inner ul.topiclist li.row dl.icon dt a[href*='-f410'][class='topictitle'],
+div.forumbg div.inner ul.topiclist li.row dl.icon dt a[href*='-f438'][class='topictitle'],
+div.forumbg div.inner ul.topiclist li.row dl.icon dt a[href*='-f305'][class='topictitle'],
+div.forumbg div.inner ul.topiclist li.row dl.icon dt a[href*='-f646'][class='topictitle'],
+div.forumbg div.inner ul.topiclist li.row dl.icon dt a[href*='-f649'][class='topictitle'],
+div.forumbg div.inner ul.topiclist li.row dl.icon dt a[href*='-f349'][class='topictitle']{
+    color:#fff;
+    background-color:#090;
+    padding:1px;
+}
+
+/* clenske podnety */
+div.forumbg div.inner ul.topiclist li.row dl.icon dt a[href*='-f350'][class='topictitle'] {
+    color:#fff;
+    background-color:#66f;
+    padding:1px;
+}
+
+/* ukoly a projekty */
+div.forumbg div.inner ul.topiclist li.row dl.icon dt a[href*='-f350'][class='topictitle'],
+div.forumbg div.inner ul.topiclist li.row dl.icon dt a[href*='-f632'][class='topictitle']{
+    color:#fff;
+    background-color:goldenrod;
+    padding:1px;
+}
+
+/* FO */
+div.forumbg div.inner ul.topiclist li.row dl.icon dt a[href*='-f230'][class='topictitle'],
+div.forumbg div.inner ul.topiclist li.row dl.icon dt a[href*='-f184'][class='topictitle'] {
+    color:#fff;
+    background-color:#DE8740;
+    padding:1px;
+}
+
+/* RK */
+div.forumbg div.inner ul.topiclist li.row dl.icon dt a[href*='-f192'][class='topictitle'] {
+    color:#ff0;
+    background-color:#4c3a65;
+}
+
+/* garanti */
+div.forumbg div.inner ul.topiclist li.row dl.icon dt a[href*='-f551'][class='topictitle'],
+div.forumbg div.inner ul.topiclist li.row dl.icon dt a[href*='-f542'][class='topictitle'],
+div.forumbg div.inner ul.topiclist li.row dl.icon dt a[href*='-f556'][class='topictitle'],
+div.forumbg div.inner ul.topiclist li.row dl.icon dt a[href*='-f534'][class='topictitle'],
+div.forumbg div.inner ul.topiclist li.row dl.icon dt a[href*='-f558'][class='topictitle']{
+    color:#fff;
+    background-color:orange;
+}
+
+/* dulezite */
+div.forumbg div.inner ul.topiclist li.row dl.icon dt a[href*='-f276'][class='topictitle'],
+div.forumbg div.inner ul.topiclist li.row dl.icon dt a[href*='-f314'][class='topictitle'],
+div.forumbg div.inner ul.topiclist li.row dl.icon dt a[href*='-f406'][class='topictitle'],
+div.forumbg div.inner ul.topiclist li.row dl.icon dt a[href*='-f485'][class='topictitle'],
+div.forumbg div.inner ul.topiclist li.row dl.icon dt a[href*='-f447'][class='topictitle'],
+div.forumbg div.inner ul.topiclist li.row dl.icon dt a[href*='-f232'][class='topictitle'],
+div.forumbg div.inner ul.topiclist li.row dl.icon dt a[href*='-f233'][class='topictitle']{
+    color:#fff;
+    background-color:#f00;
+    padding:1px;
+}
+
+
+
+
