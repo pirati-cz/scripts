@@ -16,7 +16,7 @@ $(function () {
 	} else {
 		muted = JSON.parse(muted);
 	}
-	var now = new Date().valueOf() / 1000;
+	var now = Math.floor(new Date().valueOf() / 1000);
 	var n = {};
 	for (var i in muted) {
 		var e = muted[i];
