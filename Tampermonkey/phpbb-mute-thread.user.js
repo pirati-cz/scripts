@@ -12,8 +12,19 @@
 $(function () {
 	var muted = $.cookie('mute-threads');
 	if (!muted) {
-		muted = {};
+		muted = localStorage.getItem('mute-threads');
+		if (!muted) {
+			muted = {};
+		} else {
+			try {
+				muted = JSON.parse(muted);
+			} catch (e) {
+				muted = {};
+			}
+		}
 	} else {
+		localStorage.setItem('mute-threads', muted);
+		$.cookie('mute-threads', 1, {expires: -1, path: '/'});
 		muted = JSON.parse(muted);
 	}
 	var now = Math.floor(new Date().valueOf() / 1000);
@@ -49,14 +60,14 @@ $(function () {
 		var unmutefun;
 		var mutefun = function() {
 			muted['t-' + topic_id] = now;
-			$.cookie('mute-threads', JSON.stringify(muted), {expires: 365, path: '/'});
+			localStorage.setItem('mute-threads', JSON.stringify(muted));
 			$(this).html('UNMUTE');
 			$(this).unbind('click', mutefun);
 			$(this).click(unmutefun);
 		};
 		unmutefun = function () {
 			delete muted['t-' + topic_id];
-			$.cookie('mute-threads', JSON.stringify(muted), {expires: 365, path: '/'});
+			localStorage.setItem('mute-threads', JSON.stringify(muted));
 			$(this).html('MUTE');
 			$(this).unbind('click', unmutefun);
 			$(this).click(mutefun);
