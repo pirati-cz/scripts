@@ -38,7 +38,6 @@ $(function () {
 			var button = $("<button>MUTE</button>");
 			button.click(function() {
 				muted['t-' + topic_id] = now;
-				alert(muted);	
 				$.cookie('mute-threads', JSON.stringify(muted), {expires: 365, path: '/'});
 				$(this).parent().parent().parent().remove();
 			});
