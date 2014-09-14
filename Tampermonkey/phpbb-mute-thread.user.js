@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name          PHPBB thread mute
 // @namespace     http://pirati.cz/
-// @version       0.24
+// @version       0.25
 // @author        Lukas -krtek.net- Novy <zmrd@krtek.net>
 // @description   Delists muted threads for 7 days
 // @match         https://forum.pirati.cz/*
@@ -33,14 +33,25 @@ $(function () {
 		var topic_id = url.replace(/.+t/g, '');
 
 		if ('t-' + topic_id in muted) {
-			$(this).parent().parent().parent().remove();
+			$(this).parent().parent().parent().hide();
 		} else {
 			var button = $("<button>MUTE</button>");
-			button.click(function() {
+			var unmutefun;
+			var mutefun = function() {
 				muted['t-' + topic_id] = now;
 				$.cookie('mute-threads', JSON.stringify(muted), {expires: 365, path: '/'});
-				$(this).parent().parent().parent().remove();
-			});
+				$(this).html('UNMUTE');
+				$(this).unbind('click', mutefun);
+				$(this).click(unmutefun);
+			};
+			var unmutefun = function () {
+				delete muted['t-' + topic_id];
+				$.cookie('mute-threads', JSON.stringify(muted), {expires: 365, path: '/'});
+				$(this).html('MUTE');
+				$(this).unbind('click', unmutefun);
+				$(this).click(mutefun);
+			};
+			button.click(mutefun);
 			button.css("font-size", "50%");
 			button.css("font-weight", "bold");
 			button.css("border", "1px solid gray");
