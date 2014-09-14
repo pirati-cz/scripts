@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name          PHPBB thread mute
 // @namespace     http://pirati.cz/
-// @version       0.23
+// @version       0.24
 // @author        Lukas -krtek.net- Novy <zmrd@krtek.net>
 // @description   Delists muted threads for 7 days
 // @match         https://forum.pirati.cz/*
@@ -10,19 +10,36 @@
 // ==/UserScript==
 
 $(function () {
+	var muted = $.cookie('mute-threads');
+	if (!muted) {
+		muted = {};
+	} else {
+		muted = JSON.parse(muted);
+	}
+	var now = new Date().valueOf() / 1000;
+	var n = {};
+	for (var i in muted) {
+		var e = muted[i];
+		if (now - e < 60 * 60 * 24 * 14) {
+			n[i] = e;
+		}
+	}
+	muted = n;
+
 	$('ul.topiclist.topics li dl dt a.topictitle').each(function() {
 		var url = this.href;
 
 		url = url.replace(/\.html$/, '');
 		var topic_id = url.replace(/.+t/g, '');
 
-		var cookie_name = 'mute-thread-' + topic_id;
-		if ($.cookie(cookie_name)) {
+		if ('t-' + topic_id in muted) {
 			$(this).parent().parent().parent().remove();
 		} else {
 			var button = $("<button>MUTE</button>");
 			button.click(function() {
-				$.cookie(cookie_name, '1', { expires: 7, path: '/' });
+				muted['t-' + topic_id] = now;
+				alert(muted);	
+				$.cookie('mute-threads', JSON.stringify(muted), {expires: 365, path: '/'});
 				$(this).parent().parent().parent().remove();
 			});
 			button.css("font-size", "50%");
